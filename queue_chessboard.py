@@ -6,7 +6,7 @@ WIDTH_AND_HEIGHT_CHESSBOARD = 8
 KNIGHT_MOVEMENTS = [(2,1), (1,2), (-2,1), (-1,2), (2,-1), (1,-2), (-2,-1), (-1,-2)]
 
 def get_random_spots_on_board():
-    return [np.random.randint(1, WIDTH_AND_HEIGHT_CHESSBOARD+1) for _ in range(4)]
+    return np.random.randint(1, WIDTH_AND_HEIGHT_CHESSBOARD+1, size=4)
 
 def solution():
     s = Solution()
